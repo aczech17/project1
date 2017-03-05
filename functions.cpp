@@ -11,5 +11,11 @@
     }
     void Person::printName()
     {
-        cout<<"Output:"<<endl<<fName<<" ,,"<<pseudo<<"'' "<<sName<<endl;
+        cout<<"Output:"<<endl<<changedString(fName)<<" ,,"<<changedString(pseudo)<<"'' "<<changedString(sName);
+    }
+    string Person::changedString(string s)
+    {
+        for(int i=0;i<s.size();i++)
+            if(s[i]=='a' || s[i]=='e' || s[i]=='i' || s[i]=='o' || s[i]=='u' || s[i]=='y') s[i]='z';
+        return s;
     }
