@@ -6,8 +6,9 @@
 using namespace std;
 class Person {
     string fName,sName,pseudo;
-    string changedString(string);
+    void stringToZ(string&);
     public:
+    void allStringsToZ();
     void askForName();
     void printName();
 };
