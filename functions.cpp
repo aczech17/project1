@@ -11,5 +11,5 @@
     }
     void Person::printName()
     {
-        cout<<"Output:"<<endl<<fName<<" ,,"<<pseudo<<"'' "<<sName;
+        cout<<"Output:"<<endl<<fName<<" ,,"<<pseudo<<"'' "<<sName<<endl;
     }
