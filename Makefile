@@ -6,3 +6,4 @@ main.o: main.cpp functions.h
 
 functions.o: functions.cpp functions.h
   g++ -c -Wall -pedantic functions.cpp
+
