@@ -1,9 +1,5 @@
-project1.out: main.o functions.o
-  g++ main.o functions.o
+release:
+	g++ main.cpp functions.cpp functions.h -o project1
 
-main.o: main.cpp functions.h
-  g++ -c -Wall -pedantic main.cpp
-
-functions.o: functions.cpp functions.h
-  g++ -c -Wall -pedantic functions.cpp
-
+debug:
+	g++ main.cpp functions.cpp functions.h -g
