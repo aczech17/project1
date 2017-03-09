@@ -6,8 +6,10 @@
 using namespace std;
 class Person {
     string fName,sName,pseudo;
+    void reverseString(string&);
     public:
     void askForName();
     void printName();
+    void reverseAllStrings();
 };
 #endif
